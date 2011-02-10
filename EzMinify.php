@@ -198,11 +198,9 @@
                 $group['deps'] = array_unique($group['deps']);
               }
               if($group['type'] == self::LOCAL){
-                  echo 'local';
                 //concat and minify all styles into one
                 wp_enqueue_style("EzMinify-{$key}", self::PATHTOMINIFY.implode($group['styles'], ','), $group['deps'], $group['ver'], $group['media']);
               }else{
-                  echo 'cdn';
                 //output as normal
                 wp_enqueue_style("EzMinify-{$key}", implode($group['styles'], ','), $group['deps'], $group['ver'], $group['media']);
               }
