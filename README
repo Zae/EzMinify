@@ -1,0 +1,3 @@
+This little plugin for Wordpress adds minify functionality to your theme.
+
+NOTE: It uses the dependency functionality of Wordpress so the theme needs to use wp_enqueue_script and wp_enqueue_style to be effective.
